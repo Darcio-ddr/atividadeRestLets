@@ -1,0 +1,16 @@
+CREATE SCHEMA IF NOT EXISTS exemplo AUTHORIZATION sa;
+
+CREATE TABLE IF NOT EXISTS exemplo.PRODUTOS (
+   id INT NOT NULL,
+   nome VARCHAR(100) NOT NULL,
+   descricao VARCHAR(100),
+   preco numeric,
+
+   PRIMARY KEY (id)
+);
+
+DELETE exemplo.PRODUTOS;
+
+INSERT INTO exemplo.PRODUTOS (ID, NOME, DESCRICAO, PRECO) VALUES (1, 'Geladeira' , 'nad',10);
+INSERT INTO exemplo.PRODUTOS (ID, NOME, DESCRICAO, PRECO) VALUES (2, 'Fogao' , 'nad',10);
+INSERT INTO exemplo.PRODUTOS (ID, NOME, DESCRICAO, PRECO) VALUES (3, 'Cadeira', 'nad',10);
